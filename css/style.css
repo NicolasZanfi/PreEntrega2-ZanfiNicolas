@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box; 
 }
+
 .container-grid{
         display: grid;
         width: 100%;
@@ -13,11 +14,13 @@
         "main main main"
         "footer footer footer"
         ;
-        gap: 20px;
+        gap: 1.25rem;
         background: #BBD2C5;  
         background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-size: 16px;
 }
+
 /** todos los estilos del header**/
 
 header{
@@ -35,7 +38,7 @@ header{
     color: black;
     font-family: fantasy;
     font-style: italic;
-    font-size: 20px; /** 1pt equivale a 0,3527mm)**/
+    font-size: 1.25em; 
     
         background: #2c3e50;
         height: 12vh;
@@ -91,7 +94,7 @@ header{
     flex-direction: row;
     align-items:center;
     list-style: none;
-    gap: 40px;
+    gap: 2.5em;
 }
 
 .nav-bar li a{
@@ -108,15 +111,15 @@ a:visited{
 
 .ingresar{
     grid-area: ingresar;
-    font-size: 10px;
+    font-size: 0.625em;
 }
 
 .empezar-gratis{
     grid-area: empezar-gratis;
-    font-size: 10px;
+    font-size: 0.625em;
     border-radius: 6px;
     text-align: center;
-    padding: 5px;
+    padding: 0.3125em;
 }
 .empezar-gratis:hover{
     background-color: rgba(213, 226, 23, 0.644);
@@ -175,14 +178,14 @@ main{
 
 .texto1{
         grid-area: texto1;
-        margin-top: 50px;
+        margin-top: 3.125em;
 }
 
 .texto2{
         grid-area: texto2;
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 3.125em;
         justify-content: center;
         align-items: center;
 }
@@ -191,7 +194,7 @@ main{
         grid-area: texto3;
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 3.125em;
         justify-content: center;
         align-items: center;
         
@@ -200,28 +203,29 @@ main{
 main h1{
     color: black;
     font-family: fantasy;
-    font-size: 25px;
+    font-size: 1.5625em;
     display: flex;
     justify-content: center;
-    margin: 5px;
+    margin: 0.3125em;
 }
 
 h2{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 1.875em;
 
 }
 
 main section p{
-    border: solid 2px;
-    font-size: 20px;
-    border-radius: 20px;
-    margin: 40px 10px 10px 10px;
-    padding: 15px;
+    border: solid 0.125em;
+    font-size: 1.25em;
+    border-radius: 1.25em;
+    margin: 2.5em 0.625em 0.625em 0.625em;
+    padding: 0.9375em;
     text-align: center;
     display: flex;
     flex-direction: row;
+    
 }
 
 p::selection{
@@ -243,7 +247,7 @@ p::selection{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 3.125em;
 }
 
 .imagen3{
@@ -253,27 +257,32 @@ p::selection{
         justify-content: center; 
         align-content: center;
         align-items: center;      
-        margin-top: 80px;
-        margin-bottom: 60px;
+        margin-top: 5em;
+        margin-bottom: 3.75em;
 }
 
 
 .box{
-    width: 100px;
-    height: 100px;
+        
+   
+width: 10em;
+height: 10em;
 }
 
 .box-1{
     background-color: rgb(0, 149, 255);
     border: solid 2px;
     border-radius: 3px;
-    margin: 15px;    
+    margin: 15px;  
+  
 }
 .box-2{
     background-color: rgb(255, 162, 0);
     border: solid 2px;
     border-radius: 3px;
     margin: 15px;
+    
+    
 }
 
 .box-3{
@@ -281,6 +290,7 @@ p::selection{
         border: solid 2px;
         border-radius: 3px;
         margin: 15px;
+        
 }
 
 /**todos los estilos del footer**/
@@ -302,22 +312,22 @@ footer{
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        width: 400px;
-        padding-top: 25px;
+        width: 25em;
+        padding-top: 1.5625em;
 }
 
 .contáctanos h3{
         display: flex;
         flex-direction: row;
-        width: 700px;
+        width: 43.75em;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 1.25em;
 }
 
 .contáctanos p{
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 1.25em;
 }
 
 .iconos-redes h3{
@@ -326,30 +336,65 @@ footer{
         width: 270px;
         justify-content: flex-start;
         align-items:center;
-        margin-top: 22px;
-        margin-left: 8px;    
+        margin-top: 1.375em;
+        margin-left: 0.5em;    
 }
 
 .iconos-redes .link{
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
-        gap: 15px;        
+        margin-top: 1.25em;
+        gap: 0.9375em;        
+}
+
+@media (max-width:1200px){
+
+        .container-grid{
+                font-size: 14px;
+        }
+}
+
+@media (max-width:992px){
+        .container-grid{
+                font-size: 14px;
+        }
 }
 
 @media (max-width:768px){
         .container-grid{
-                grid-template-columns: repeat(2,1fr);
-                grid-template-rows: repeat(3,1fr);
+                grid-template-columns: (2,1fr);
+                font-size: 12px;                
+}
+}
+/* Mobile*/
+
+@media (max-width:576px){
+        
+        .container-grid{
+                grid-template-columns: 1fr;
+                font-size: 8px;
+        }
+
+        header{
+                height: 10vh;
+                
+        }
+
+        main{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                justify-items: center;
+                align-content: center;
+                
         }
 
         
         
-
-
-
-
-
-
+        footer{
+                
+                height: 10vh;
+        }
 
 }
